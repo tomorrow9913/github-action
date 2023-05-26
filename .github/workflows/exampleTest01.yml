@@ -1,0 +1,15 @@
+name: example
+
+on:
+  push:
+    branches: ["main"]
+jobs:
+  runcmd:
+    runs-on: ubuntu-latest
+    
+    steps:
+#       - uses: actions/checkout@v3
+      - name: Run pwd
+        run: pwd
+      - name: run ls -al
+        run: ls -al
